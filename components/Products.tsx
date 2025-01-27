@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import RevealAnimation from "./framer/RevealAnimation";
 import { ShoppingBag } from "lucide-react";
 import DisplayProducts from "./DisplayProducts";
-import Script from "next/script";
 
 const Products = () => {
   const [productsData, setProductsData] = useState([]);
@@ -75,13 +74,10 @@ const Products = () => {
         <div className="absolute -top-10 left-0 w-20 h-20 border-t-2 border-l-2 border-purple-500/20 rounded-tl-3xl" />
         <div className="absolute -bottom-10 right-0 w-20 h-20 border-b-2 border-r-2 border-pink-500/20 rounded-br-3xl" />
       </div>
-
-      <Script 
-        src="https://cdn.sellix.io/static/js/embed.js" 
-        strategy="beforeInteractive"
-      />
     </section>
   );
 };
 
 export default Products;
+
+
